@@ -1,29 +1,42 @@
 h1 {
     text-align: center;
     font-size: 75px;
+    font-family: cursive;
+    color: #900C3F;
+    margin-bottom: 25px;
+    margin-top: 15px;
 }
 
 .before-eating {
     display: flex;
-    border: 5px solid black;
-    width: 40%;
+    border: 5px solid #900C3F;
+    width: 49%;
     height: auto;
     float: left;
     padding-right: 40px;
     margin: auto;
+    border-radius: 20px;
+    background-color: #2D3731
 }
 
 .after-eating {
     display: flex;
-    border: 5px solid black;
-    width: 40%;
+    border: 5px solid #900C3F;
+    width: 49%;
     float: right;
     height: auto;
     padding-left: 40px;
     margin: auto;
+    border-radius: 20px;
+    background-color: #2D3731
+}
+
+.before-eating, .after-eating {
+    
 }
 
 .container {
+    width: 100%;
 }
 
 form {
@@ -32,4 +45,48 @@ form {
 
 #second-row {
     margin-top: 40px;
+}
+
+#list-before li,
+#list-after li {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:rgba(255,255,255,0.8);
+    text-shadow:0 0 4px rgba(255,255,255,0.6);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    
+}
+#list-after li {
+    margin-right: 80px;
+}
+#list-before li.title,
+#list-after li.title{
+    color:rgba(255,255,255,0.8);
+    text-shadow:0 0 4px rgba(255,255,255,0.6);
+    -webkit-perspective:1000;
+    perspective:10;
+    transform: rotate(-4deg) rotateY(20deg);
+    -webkit-transform: rotate(-4deg) rotateY(20deg);
+    margin-top: -20px;
+    text-decoration-line: underline;
+}
+
+ul {
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+button.devour-button {
+    margin-left: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#create-burger {
+    margin-left: 20px;
+}
+
+body {
+    background: #ECD10B;
 }
