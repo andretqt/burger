@@ -14,6 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL"
+    "username": "root",
+    "password": "motdepasse",
+    "database": "burgers_db",
+    "host": "localhost",
+    "dialect": "mysql"
   }
 }
