@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 require("./routes/api-routes")(app);
 
 
-db.sequelize.sync({force: true}).then(function() {
+db.sequelize.sync().then(function() {
     app.listen(PORT, function() {
         console.log("server listening on: http://localhost:" + PORT);
     });
