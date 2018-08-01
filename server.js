@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT;
 var app = express();
 var db = require("./models")
 app.use(express.static("public"));
