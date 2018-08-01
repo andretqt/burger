@@ -6,14 +6,10 @@ var db = require("./models")
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-var routes = require("./routes/api-routes")
+require("./routes/api-routes")(app);
 
-app.use(routes);
-app.listen(PORT, function() {
-    console.log("server listening on: http://localhost:" + PORT);
-});
 
-db.sequelize.sync().then(function() {
+db.sequelize.sync({force: true}).then(function() {
     app.listen(PORT, function() {
         console.log("server listening on: http://localhost:" + PORT);
     });
